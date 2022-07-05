@@ -1,0 +1,76 @@
+/* GLOBAL rules======== */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --secondcolor: #2c4755;
+  --maincolor: #10cab7;
+  --section_color: #f6f6f6;
+  --padding_section: 60px;
+}
+html{
+  scroll-behavior: smooth ;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+/* start special components====== */
+.special_heading {
+  color: #ebeced;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+.special_heading + p {
+  margin: -30px 0 0;
+  font-size: 20px;
+  text-align: center;
+  color: #79797979;
+}
+
+/* end special components====== */
+
+/* media query================ */
+/* small==== */
+
+@media (min-width: 789px) {
+  .container {
+    width: 750px;
+  }
+  .special_heading {
+    font-size: 60px;
+  }
+
+  .special_heading + p {
+    margin-top: 0px;
+  }
+}
+
+/* medium==== */
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large==== */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
